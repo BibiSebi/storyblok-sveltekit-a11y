@@ -4,13 +4,10 @@
 	export let slug;
 </script>
 
-
+<a href="/{slug}" class="w-full h-full bg-[#f7f6fd] rounded-[5px] text-center border-2 border-transparent overflow-hidden hover:shadow-2xl hover:border-[#50b0ae] transition">
 <article
 	use:storyblokEditable={article}
-	class="w-full h-full bg-[#f7f6fd] rounded-[5px] text-center overflow-hidden"
 >
-  <a	href="/{slug}">
-
     <img
       src="{article.image.filename}/m/600x0"
       alt={article.image.alt}
@@ -25,6 +22,6 @@
       </p>
 
     </div>
-  </a>
 </article>
+</a>
 
