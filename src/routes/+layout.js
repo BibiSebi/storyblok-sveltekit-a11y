@@ -7,11 +7,12 @@ import Article from "../components/Article.svelte";
 import PopularArticles from "../components/PopularArticles.svelte";
 import AllArticles from "../components/AllArticles.svelte";
 import { apiPlugin, storyblokInit, useStoryblokApi } from "@storyblok/svelte";
+import { PUBLIC_STORYBLOK_ACCESS_TOKEN } from '$env/static/public';
 
 /** @type {import('./$types').LayoutLoad} */
 export async function load() {
   storyblokInit({
-    accessToken: "MX4ACP2TErhMWLJh8QIFlwtt",
+    accessToken: PUBLIC_STORYBLOK_ACCESS_TOKEN,
     use: [apiPlugin],
     components: {
       feature: Feature,

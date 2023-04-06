@@ -9,13 +9,13 @@
 	class={'min-h-[500px] relative flex items-end justify-center p-9 my-6 rounded-[5px] overflow-hidden ' +
 		`${heroClasses}`}
 >
-	<div class="relative z-10 text-center">
-		<h1 class="text-6xl text-white font-bold mb-3">
+	<div class="relative z-10 text-center flex flex-col">
+		<span class="text-6xl text-white font-bold mb-3">
 			{blok.headline}
-		</h1>
-		<h2 class="text-4xl text-white font-light">
+		</span>
+		<span class="text-4xl text-white font-light">
 			{blok.subheadline}
-		</h2>
+		</span>
 	</div>
 	<img
 		src={blok.background_image.filename}

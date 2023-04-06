@@ -12,10 +12,10 @@
 		class="w-full h-[360px] lg:h-[450px] object-cover"
 	/>
 	<div class="container mx-auto mb-12">
-		<h1 class="text-6xl text-[#50b0ae] font-bold mt-12 mb-4">{blok.title}</h1>
-		<h2 class="text-2xl text-[#1d243d] font-bold mb-4">
+		<h2 class="text-6xl text-[#50b0ae] font-bold mt-12 mb-4">{blok.title}</h2>
+		<h3 class="text-2xl text-[#1d243d] font-bold mb-4">
 			{blok.subtitle}
-		</h2>
+		</h3>
 		<div class="prose">{@html resolvedRichText}</div>
 	</div>
 </div>
